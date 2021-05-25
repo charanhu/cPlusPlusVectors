@@ -23,6 +23,8 @@ int main(){
     list1.push_back(12);
 
     dispaly(list1);
+    list1.sort();
+    dispaly(list1);
     list1.pop_back();
     dispaly(list1);
     list1.pop_front();
@@ -40,5 +42,15 @@ int main(){
     *iter=25;
     iter++;
     dispaly(list2);
+    list1.merge(list2);
+    dispaly(list1);
+    list1.sort();
+    dispaly(list1);
+    list1.push_front(13);
+    dispaly(list1);
+    list1.sort();
+    dispaly(list1);
+    list1.reverse();
+    dispaly(list1);
    return 0;
 }
